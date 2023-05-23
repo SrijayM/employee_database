@@ -10,10 +10,11 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className='background-full'>
+    <BrowserRouter >
       <div className="container">
-        <h3 className='m-3 d-flex justify-content-center'>
-            Helo
+        <h3 className='m-3 d-flex justify-content-center text-white'>
+            Employee Dashboard
         </h3>
         <Navigation/>
         <Routes>
@@ -23,6 +24,8 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+
+    </div>
   );
 }
 
